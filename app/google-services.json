@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "628145245789",
+    "project_id": "pdd-plant",
+    "storage_bucket": "pdd-plant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628145245789:android:161cf42274c7248bc8c7b4",
+        "android_client_info": {
+          "package_name": "com.macmads.agrione"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628145245789-ut45kil9rcpv5rmqavcjuk6glu47glik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAylFGn67AJDtSCygdZY1o5m4luaI0Qru4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628145245789-ut45kil9rcpv5rmqavcjuk6glu47glik.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "628145245789-8p0t3030nf3b134pv5b8qbsva2ct1d6m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.macmads.pdd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628145245789:android:eaf2110f0c7f7ce4c8c7b4",
+        "android_client_info": {
+          "package_name": "com.macmads.pdd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628145245789-ut45kil9rcpv5rmqavcjuk6glu47glik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAylFGn67AJDtSCygdZY1o5m4luaI0Qru4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628145245789-ut45kil9rcpv5rmqavcjuk6glu47glik.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "628145245789-8p0t3030nf3b134pv5b8qbsva2ct1d6m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.macmads.pdd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628145245789:android:7fcdc640934b9d63c8c7b4",
+        "android_client_info": {
+          "package_name": "com.macmads.plant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628145245789-ut45kil9rcpv5rmqavcjuk6glu47glik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAylFGn67AJDtSCygdZY1o5m4luaI0Qru4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628145245789-ut45kil9rcpv5rmqavcjuk6glu47glik.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "628145245789-8p0t3030nf3b134pv5b8qbsva2ct1d6m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.macmads.pdd"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

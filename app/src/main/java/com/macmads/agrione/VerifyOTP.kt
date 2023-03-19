@@ -77,9 +77,16 @@ class VerifyOTP : AppCompatActivity() {
             } else {
                 dialog.show()
                 val credential =
-                    PhoneAuthProvider.getCredential(verificationId, binding.editTextOtp.text!!.toString())
+                    PhoneAuthProvider.getCredential(
+                        verificationId,
+                        binding.editTextOtp.text!!.toString()
+                    )
                 auth.signInWithCredential(credential).addOnCompleteListener {
                     if (it.isSuccessful) {
+
+
+                        startActivity(Intent(this, MainActivity::class.java))
+                        finish()
                         val docRef = db.collection("users").document(auth.uid.toString())
                         docRef.get()
                             .addOnSuccessListener { document ->

@@ -11,7 +11,11 @@ import android.provider.MediaStore
 import android.view.Gravity
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import com.macmads.agrione.databinding.ActivityMainBinding
 import java.io.IOException
 
@@ -30,9 +34,13 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    private lateinit var auth: FirebaseAuth
+
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        auth = Firebase.auth
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
@@ -58,6 +66,26 @@ class MainActivity : AppCompatActivity() {
         binding.mDetectButton.setOnClickListener {
             val results = mClassifier.recognizeImage(mBitmap).firstOrNull()
             binding.mResultTextView.text= results?.title+"\n Confidence:"+results?.confidence
+
+        }
+        binding.logoutCard.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Sign Out")
+            builder.setMessage("Do you really want to Sign Out. To Use app you need to Login.")
+            builder.setPositiveButton("Sign Out") { dialog, which ->
+                auth.signOut()
+                startActivity(Intent(this, Login::class.java))
+                finish()
+                dialog.dismiss()
+            }
+            builder.setNegativeButton(android.R.string.no) { dialog, which ->
+                Toast.makeText(
+                    applicationContext,
+                    android.R.string.no, Toast.LENGTH_SHORT
+                ).show()
+                dialog.dismiss()
+            }
+            builder.show()
 
         }
     }
