@@ -14,6 +14,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "628145245789-ilqh8k0lugiq3im59161ropkbeko1hmq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.macmads.agrione",
+            "certificate_hash": "07c2f1bedbba5d24d9e0161f139b2d74ed24f776"
+          }
+        },
+        {
+          "client_id": "628145245789-vrhdurqhfh6vc7r2h9reequ0uu9fb1u9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.macmads.agrione",
+            "certificate_hash": "df9d98dfd47175fd7bad0288e84d559308d7b61b"
+          }
+        },
+        {
           "client_id": "628145245789-ut45kil9rcpv5rmqavcjuk6glu47glik.apps.googleusercontent.com",
           "client_type": 3
         }

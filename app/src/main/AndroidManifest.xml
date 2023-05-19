@@ -45,6 +45,10 @@
             android:name=".MainActivity"
             android:exported="true">
         </activity>
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ica" >
+        </meta-data>
     </application>
 
 </manifest>

@@ -51,4 +51,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'org.tensorflow:tensorflow-lite:2.1.0'
     implementation 'com.google.android.gms:play-services-safetynet:18.0.1'
+    implementation 'com.google.mlkit:image-labeling:17.0.7'
+    implementation 'com.google.android.gms:play-services-mlkit-image-labeling:16.0.8'
 }
